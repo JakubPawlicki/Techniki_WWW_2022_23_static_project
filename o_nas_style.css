@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Mono:wght@200&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: background-color;
+    transition-duration: 0.2s;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: black;
+    background-color: azure;
+    text-decoration: none;
+    border: 1px solid white;
+    padding-left: 19px;
+    padding-right: 19px;
+    height: 30px;
+}
+
+header {
+    background-color: #2F2FA2;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#header_title {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 25px;
+}
+
+#kafelki {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.o-nas {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px 30px 30px;
+    font-size: 20px;
+    background-color: Azure;
+    border-style: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 15%);
+    transition: box-shadow .5s;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    align-items: center;
+}
+
+.o-nas:hover {
+    box-shadow: 0 15px 25px rgb(0 0 0 / 50%);
+}
+
+img {
+    max-width: 50%;
+    height: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #1D1D1D;
+    color: azure;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    grid-template-rows: 1.5fr;
+    height: auto;
+}
+
+
+footer div {
+    border-right: solid 1px black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#wiadomosc {
+    margin: 20px 20px 20px 20px;
+    width: 60%;
+}
+.pole {
+    border-radius: 15px;
+    border: solid 1px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+    #kafelki {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 10px 10px 10px 10px;
+    }
+    img {
+        display: none;
+    }
+
+    iframe {
+        display: none;
+    }
+}
